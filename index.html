@@ -5,38 +5,127 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/7d8ada606a.js" crossorigin="anonymous"></script>
     <title>RESERVIA</title>
 </head>
 
+<!-- Header -->
+
 <body>
-    <header>
-        <figure>
-            <img src="images/logo/Reservia@3x.png" alt="logo" />
-        </figure>
-        <nav>
-            <ul>
-                <li>Hebergements</li>
-                <li>Activités</li>
-                <li>S'incrire</li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h2>Trouver votre hébergement pour des vacances de rêve</h2>
-            <p>En plein centre ville ou en pleine nature</p>
-        </section>
-        <section>
-            <ul>
-                <li>Filtres</li>
-                <li>Economique</li>
-                <li>Familial</li>
-                <li>Romantique</li>
-                <li>Animaux autorisés</li>
-            </ul>
-        </section>
-        <span>Plus de 500 logements sont disponibles dans cette ville</span>
-    </main>
+    <div id="bloc_page">
+        <header>
+            <section class="entete">
+                <div>
+                    <figure>
+                        <img src="images/logo/Reservia.svg" alt="logo" title="logo reservia" />
+                    </figure>
+                </div>
+
+                <nav>
+                    <ul id="nav_page">
+                        <li>
+                            <a href="#herbergement">Hebergements</a>
+                        </li>
+                        <li>
+                            <a href="#activite">Activités</a>
+                        </li>
+                        <li>
+                            <a href="#titre">S'incrire</a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+            <section id="titre">
+                <h2>Trouver votre hébergement pour des vacances de rêve</h2>
+                <p>En plein centre ville ou en pleine nature</p>
+            </section>
+            <div class="recherche">
+                <form action="recherche" method="post">
+                    <label for="recherche"><i class="fas fa-map-marker-alt"></i></label>
+                    <input type="text" name="barre de recherche" id="recherche" placeholder="Une destination?" />
+                    <input type="reset" value="rechercher" />
+                </form>
+            </div>
+
+            <section>
+                <ul id="nav_selection">
+                    <li>Filtres</li>
+
+                    <li title="eco"><i class="fas fa-money-bill-wave"></i>Economique</li>
+
+                    <li title="famille"><i class="fas fa-child"></i>Familial</li>
+
+                    <li title="romantique"><i class="fas fa-heart"></i>Romantique</li>
+
+                    <li title="animaux"><i class="fas fa-dog"></i>Animaux autorisés</li>
+                </ul>
+            </section>
+
+            <span><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</span>
+        </header>
+
+        <!-- corps -->
+
+        <main>
+            <section class="place">
+                <article class="partie-1">
+                    <h2 id="herbergement">Hébergement à Marseille</h2>
+
+                    <ul>
+                        <li>
+                            <figure>
+                                <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="auberge la cannebierre" title="une photo d'auberge" />
+                            </figure>
+                            <figcaption>Auberge la Cannebiere</figcaption>
+                            <p>nuit à partir de 25€</p>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="auberge la cannebierre" title="une photo d'auberge" />
+                            </figure>
+                            <figcaption>Auberge la Cannebiere</figcaption>
+                            <p>nuit à partir de 25€</p>
+                        </li>
+                    </ul>
+                </article>
+                <aside class="partie-2">
+                    <div class="populaire">
+                        <h2>Les plus populaires</h2>
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div></div>
+                </aside>
+            </section>
+            <section class="activ">
+                <h2 id="activite">Activités à marseille</h2>
+                <section></section>
+            </section>
+        </main>
+    </div>
+
+    <!-- footer -->
+
+    <footer>
+        <ul>
+            <li class="footer-title">A propos</li>
+            <li>Fonctionnement du site</li>
+            <li>Conditions générales de vente</li>
+            <li>Données et confidentialité</li>
+        </ul>
+        <ul>
+            <li class="footer-title">Nos hébergements</li>
+            <li>Charte qualité</li>
+            <li>Soumettre votre hôtel</li>
+        </ul>
+        <ul>
+            <li class="footer-title">Assistance</li>
+            <li>Centre d'aide</li>
+            <li>Nous contacter</li>
+        </ul>
+    </footer>
 </body>
 
 </html>
