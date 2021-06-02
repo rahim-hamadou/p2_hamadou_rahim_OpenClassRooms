@@ -12,20 +12,17 @@
     <title>RESERVIA</title>
 </head>
 
-<!-- Header -->
+<!-- header - top-->
 
 <body>
     <div id="bloc_page">
         <header>
-            <section class="entete">
-                <div>
-                    <figure>
-                        <img src="images/logo/Reservia.svg" alt="logo" title="logo reservia" />
-                    </figure>
+            <section class="header-top">
+                <div class="logo">
+                    <img src="images/logo/Reservia.svg" alt="logo" title="logo reservia" />
                 </div>
-
                 <nav>
-                    <ul id="nav_page">
+                    <ul id="nav-page">
                         <li>
                             <a href="#herbergement">Hebergements</a>
                         </li>
@@ -38,42 +35,42 @@
                     </ul>
                 </nav>
             </section>
+            <!-- header - search -->
             <section id="titre">
                 <h2>Trouver votre hébergement pour des vacances de rêve</h2>
                 <p>En plein centre ville ou en pleine nature</p>
             </section>
             <div class="recherche">
                 <form action="recherche" method="post">
-                    <label for="recherche"><i class="fas fa-map-marker-alt"></i></label>
-                    <input type="text" name="barre de recherche" id="recherche" placeholder="Une destination?" />
-                    <input type="reset" value="rechercher" />
+                    <label for="recherche">
+							<i class="fas fa-map-marker-alt"></i>
+						</label>
+                    <input class="btn-search" type="text" name="barre de recherche" id="recherche" placeholder="Une destination?" />
+                    <input class="btn-reset" type="reset" value="rechercher" />
                 </form>
             </div>
-
+            <!-- header - filtre -->
             <section>
-                <ul id="nav_selection">
+                <ul id="filtres">
                     <li>Filtres</li>
-
                     <li title="eco"><i class="fas fa-money-bill-wave"></i>Economique</li>
-
                     <li title="famille"><i class="fas fa-child"></i>Familial</li>
-
                     <li title="romantique"><i class="fas fa-heart"></i>Romantique</li>
-
                     <li title="animaux"><i class="fas fa-dog"></i>Animaux autorisés</li>
                 </ul>
             </section>
-
-            <span><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</span>
+            <span>
+					<i class="fas fa-info"></i>
+					Plus de 500 logements sont disponibles dans cette ville
+				</span>
         </header>
 
-        <!-- corps -->
+        <!-- corps - part1 -->
 
         <main>
             <section class="place">
                 <article class="partie-1">
                     <h2 id="herbergement">Hébergement à Marseille</h2>
-
                     <ul>
                         <li>
                             <figure>
@@ -91,6 +88,7 @@
                         </li>
                     </ul>
                 </article>
+                <!-- corps - part2 -->
                 <aside class="partie-2">
                     <div class="populaire">
                         <h2>Les plus populaires</h2>
@@ -99,6 +97,7 @@
                     <div></div>
                 </aside>
             </section>
+            <!-- corps - part3 -->
             <section class="activ">
                 <h2 id="activite">Activités à marseille</h2>
                 <section></section>

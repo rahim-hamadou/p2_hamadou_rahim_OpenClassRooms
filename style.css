@@ -5,8 +5,7 @@ body {
     min-height: 100%;
     min-width: 100%;
     margin: 0;
-    font-family: 'Raleway', sans-serif;
-    font-size: 85%;
+    font-family: "Raleway", sans-serif;
 }
 
 #bloc_page {
@@ -15,17 +14,10 @@ body {
     margin: auto;
 }
 
-li {
-    list-style: none;
-}
 
+/* header - top */
 
-/* header */
-
-
-/* logo et navigation */
-
-figure {
+header .logo {
     margin-left: 0;
 }
 
@@ -50,16 +42,18 @@ header li {
     flex-direction: row;
 }
 
+li {
+    list-style: none;
+}
+
 nav ul {
     margin-top: 0px;
-    padding: 0;
 }
 
 nav a {
     text-decoration: none;
     padding-top: 25px;
     border-top: 5px solid #ffffff;
-    margin-left: 35px;
 }
 
 nav a:hover {
@@ -67,17 +61,48 @@ nav a:hover {
     transition: 0.3s;
 }
 
-#header-nav {
-    display: flex;
-    justify-content: space-between;
+
+/* header - search */
+
+.recherche {
+    border-radius: 25px 25px 25px 25px;
+    max-width: 350px;
+    height: 50px;
+    position: relative;
+    overflow: hidden;
 }
 
-#header-filtre li {
-    margin: 0 15px;
-    position: relative;
-    left: -15px;
-    font-weight: bold;
+.recherche i {
+    position: absolute;
+    border: none;
+    margin: 0;
+    height: 100%;
+    padding: 15px 20px 0 20px;
+    background-color: #56a731;
 }
+
+.btn-search {
+    position: absolute;
+    height: 100%;
+    left: 50px;
+    background-color: #978787;
+    border: none;
+    max-width: 150px;
+    padding: 0 17px;
+}
+
+.btn-reset {
+    right: 0;
+    position: absolute;
+    border: none;
+    height: 100%;
+    padding: 0 30px;
+    min-width: 60px;
+    background-color: #0065fc;
+}
+
+
+/* header - filtre */
 
 .header-top {
     display: flex;
@@ -90,37 +115,6 @@ nav a:hover {
     color: #0065fc;
 }
 
-
-/* search-bar et filtre */
-
-form input {
-    padding: 8px 0px 7px 8px;
-    border: 0.1px solid black;
-    position: relative;
-    left: -22px;
-    top: 0.8px;
-}
-
-input:last-child {
-    position: relative;
-    left: -31px;
-    top: 0.5px;
-    padding: 8px 10px 7.3px 10px;
-    border: 0.1px solid black;
-    border-radius: 0px 12px 12px 0px;
-    background-color: #0065fc;
-}
-
-form i {
-    position: relative;
-    left: 0px;
-    top: 2.8px;
-    padding: 10px 8.2px 5.8px 10px;
-    border: 0.1px solid black;
-    border-radius: 12px 0px 0px 12px;
-    background-color: #f2f2f2
-}
-
 #titre {
     margin-bottom: 15px;
 }
@@ -129,50 +123,29 @@ header i {
     margin-right: 15px;
 }
 
-#header-filtre {
+#filtres {
     display: flex;
     justify-content: flex-start;
     padding: 0;
 }
 
-#header-filtre li {
-    border: 0.2px solid black;
-    padding: 5px 8px 0 12px;
-    background-color: transparent
+#filtres li {
+    margin-right: 25px;
+    margin-left: 0;
+    color: black;
 }
 
-#header-filtre :nth-child(2) {
-    padding: 7px 6px;
-    margin-left: 10px;
-    border: 0.5px solid rgb(25, 29, 240);
-    border-radius: 80px;
-    position: relative;
+#filtres li i {
+    background-color: pink;
 }
 
-#header-filtre :nth-child(4) {
-    padding: 6px 10px;
-    margin-left: 10px;
-    border: 0.5px solid rgb(25, 29, 240);
-    border-radius: 80px;
-    position: relative;
+#nav-page {
+    display: flex;
+    justify-content: space-between;
 }
 
-#header-filtre :nth-child(6) {
-    padding: 7px 8px;
-    margin-left: 10px;
-    border: 0.5px solid rgb(25, 29, 240);
-    border-radius: 80px;
-    position: relative;
-}
-
-#header-filtre :nth-child(8) {
-    padding: 6px 8px;
-    margin-left: 10px;
-    border: 0.5px solid rgb(25, 29, 240);
-    border-radius: 80px;
-    position: relative;
-    left: 28px;
-    background-color: #3071d2;
+#nav-page li {
+    margin: 0 25px;
 }
 
 
@@ -210,11 +183,12 @@ main {
 /* footer */
 
 footer {
-    background-color: #f2f2f268;
+    background-color: #bc585868;
     display: flex;
     justify-content: space-around;
     margin: 35px 0px 0px 0px;
-    position: relative bottom: 0px;
+    position: relative;
+    bottom: 0px;
     left: 0px;
     width: 100%;
     border: 2px solid red;
@@ -227,10 +201,4 @@ footer ul {
 .footer-title {
     font-weight: bold;
     margin-bottom: 15px;
-}
-
-.toto i {
-    border: 1px solid black;
-    border-radius: 15px;
-    padding: 8px;
 }
