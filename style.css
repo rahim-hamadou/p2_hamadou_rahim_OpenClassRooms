@@ -230,6 +230,7 @@ h2 {
     width: 100%;
     background-color: bisque;
     min-height: 650px;
+    font-size: 60%;
 }
 
 
@@ -239,6 +240,15 @@ h2 {
     width: 65%;
     background-color: #f2f2f2;
     border-radius: 18px;
+    background-color: green;
+}
+
+.hebergements {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: red;
+    height: 100%;
 }
 
 .hebergement-grille {
@@ -254,7 +264,7 @@ h2 {
     padding: 5px 5px 5px 5px;
 }
 
-article {
+.hebergement-grille article {
     padding: 5px;
     width: 28%;
     height: auto;
@@ -262,7 +272,6 @@ article {
     box-shadow: 2px 4px 15px -1px #9a9a9a;
     border: 1px white solid;
     border-radius: 10px;
-    font-size: 60%;
     margin-bottom: 25px;
     -webkit-transform: scale(1);
     transform: scale(1);
@@ -270,7 +279,7 @@ article {
     transition: 0.3s ease-in-out;
 }
 
-article:hover {
+.hebergement-grille article:hover {
     -webkit-transform: scale(1.08);
     transform: scale(1.08);
     background-color: #deebff;
@@ -322,9 +331,96 @@ main article:nth-child(5) .hebergement-stars i:nth-child(5) {
 /* populaire */
 
 #populaire {
-    width: 30%;
     background-color: #f2f2f2;
-    border-radius: 18px;
+    border-radius: 15px 15px 15px 15px;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 30%;
+    background-color: rgb(222, 204, 10);
+}
+
+.populaire-titre {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.populaire {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+    padding: 0 10px;
+    background-color: green;
+}
+
+.populaire-grille {
+    display: flex;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: red;
+}
+
+.populaire-grille article {
+    width: 90%;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+.populaire-grille article:hover {
+    -webkit-transform: scale(1.08);
+    transform: scale(1.08);
+}
+
+.populaire-marseille {
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    justify-content: space-between;
+    width: 94%;
+    background-color: rgb(76, 57, 57);
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px 5px #e4e4e4;
+}
+
+.populaire-details {
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.fa-chart-line {
+    font-size: 130%;
+    color: black;
+    padding-top: 0px;
+    padding-right: 30px;
+}
+
+.populaire-marseille img {
+    width: 130px;
+    height: 85px;
+    object-fit: cover;
+    border-radius: 15px 0 0 15px;
+}
+
+.populaire-stars {
+    color: #0065fc;
+}
+
+.populaire-grille article:nth-child(2) .populaire-stars i:nth-child(5) {
+    color: #f2f2f2;
+}
+
+.populaire-grille article:nth-child(3) .populaire-stars i:nth-child(5) {
+    color: #f2f2f2;
 }
 
 
