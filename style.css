@@ -1,32 +1,10 @@
-/* police */
-
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
-
-/* font-family: "Raleway", sans-serif; */
-
-
-/* couleur 
-bleu #0065FC
-bleu clair #DEEBFF
-gris #F2F2F2
-*/
-
-
-/* font awesome 
-maps:<i class="fas fa-map-marker-alt"></i>
-billet:<i class="fas fa-money-bill-wave"></i>
-enfant:<i class="fas fa-child"></i>
-coeur:<i class="fas fa-heart"></i>
-chien:<i class="fas fa-dog"></i>
-etoile:<i class="fa fa-star" aria-hidden="true"></i>
-*/
-
 body,
 html {
     color: black;
     margin: 0;
     font-family: "Raleway", sans-serif;
-    width: 1430px;
+    max-width: 1430px;
 }
 
 a:visited {
@@ -39,7 +17,7 @@ a {
 }
 
 #bloc_page {
-    width: 95%;
+    max-width: 95%;
     margin: 20px auto;
 }
 
@@ -497,6 +475,8 @@ main figure:nth-child(5) .hebergement-stars i:nth-child(5) {
 #activite {
     border-radius: 18px;
     margin: 50px 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .activites {
@@ -656,4 +636,75 @@ footer ul:nth-child(3) {
 
 footer li {
     font-size: 18px;
+}
+
+
+/* medias queries */
+
+
+/* tablette */
+
+@media screen and (max-width: 1024px) {
+    p {
+        color: red;
+    }
+    body {
+        width: 100%;
+        margin: auto;
+        background-color: bisque;
+    }
+    #bloc_page {
+        max-width: 95%;
+        margin: auto;
+    }
+    #corps {}
+    .filtres {
+        display: flex;
+        align-items: flex-start;
+        margin: 25px 0 20px 0;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    footer ul:nth-child(3) {
+        margin-right: 150px;
+    }
+    footer {
+        background-color: #f2f2f2;
+        display: flex;
+        justify-content: space-around;
+        margin: 35px 0px 0px 0px;
+        bottom: 0px;
+        left: 0px;
+        width: 110%;
+    }
+}
+
+
+/* mobile */
+
+@media screen and (max-width: 870px) {
+    p {
+        color: darkgreen;
+    }
+    body {
+        width: 100%;
+        background-color: aquamarine;
+        margin: auto;
+    }
+    #bloc_page {
+        max-width: 95%;
+        margin: auto;
+    }
+    .header-top {}
+    footer {
+        background-color: #f2f2f2;
+        display: flex;
+        align-items: flex-start;
+        margin: 0px 0px 15px 0px;
+        bottom: 0px;
+        left: 0px;
+        width: 110%;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
 }
