@@ -12,13 +12,24 @@ a:visited {
     color: black;
 }
 
-a {
-    text-decoration: none;
+header .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 15;
+}
+
+header li {
+    list-style: none;
+}
+
+.menu li a {
+    padding-top: 15px;
 }
 
 #bloc_page {
     max-width: 95%;
-    margin: 20px auto;
+    margin: 0 auto;
 }
 
 
@@ -36,10 +47,8 @@ a {
     margin: 10px 0px 20px 0;
 }
 
-.header-top nav {
+.header-top nav ul {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
 }
 
 .header-top .menu {
@@ -51,7 +60,7 @@ a {
 
 .header-top .menu a {
     text-decoration: none;
-    padding-top: 25px;
+    padding-top: 20px;
     margin-right: 20px;
     color: #0065fc;
     font-size: 14px;
@@ -709,11 +718,14 @@ footer li {
     div .logo {
         margin: 0;
     }
+    .header-top {
+        min-width: 1024px;
+    }
     .header-top menu {
-        display: flex;
         flex-wrap: wrap-reverse;
-        flex-direction: row;
-        margin-top: -100px;
+        margin-top: 50px;
+        margin-left: 0px;
+        padding: 0px;
     }
     .header-top menu a {
         width: 100%;
@@ -748,7 +760,7 @@ footer li {
         margin: auto;
     }
     #bloc_page {
-        max-width: 94%%;
+        max-width: 94%;
         margin: auto;
     }
     #corps {
