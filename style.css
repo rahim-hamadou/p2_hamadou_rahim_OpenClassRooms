@@ -25,7 +25,15 @@ a {
 /* header-top */
 
 .header-top {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
     margin-bottom: 35px;
+}
+
+.header-top figure {
+    margin: 10px 0px 20px 0;
 }
 
 .header-top nav {
@@ -35,6 +43,9 @@ a {
 }
 
 .header-top .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
     text-decoration: none;
 }
 
@@ -555,6 +566,10 @@ main figure:nth-child(5) .hebergement-stars i:nth-child(5) {
     width: 100%;
 }
 
+.activite-carte1-1 img {
+    width: 100%;
+}
+
 .activite-moyenne-img img {
     height: 180px;
     max-width: 100%;
@@ -574,12 +589,31 @@ main figure:nth-child(5) .hebergement-stars i:nth-child(5) {
     transition: 0.3s ease-in-out;
 }
 
+.activite-carte1-1 {
+    background-color: white;
+    border: 2px #f2f2f2 solid;
+    border-radius: 20px;
+    box-shadow: -1px 9px 11px -6px #e4e4e4;
+    height: 240px;
+    overflow: hidden;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
 .activite-carte1:hover {
     -webkit-transform: scale(1.08);
     transform: scale(1.08);
 }
 
-.activite-carte2 {
+.activite-carte1-1:hover {
+    -webkit-transform: scale(1.08);
+    transform: scale(1.08);
+}
+
+.activite-carte2,
+.activite-carte2-2 {
     background-color: white;
     border: 2px #f2f2f2 solid;
     border-radius: 20px;
@@ -595,7 +629,20 @@ main figure:nth-child(5) .hebergement-stars i:nth-child(5) {
     transition: 0.3s ease-in-out;
 }
 
+.activite-carte2-2 {
+    height: 165px;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
 .activite-carte2:hover {
+    -webkit-transform: scale(1.08);
+    transform: scale(1.08);
+}
+
+.activite-carte2-2:hover {
     -webkit-transform: scale(1.08);
     transform: scale(1.08);
 }
@@ -659,6 +706,18 @@ footer li {
     #corps {
         text-transform: none;
     }
+    div .logo {
+        margin: 0;
+    }
+    .header-top menu {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        flex-direction: row;
+        margin-top: -100px;
+    }
+    .header-top menu a {
+        width: 100%;
+    }
     .filtres {
         display: flex;
         align-items: flex-start;
@@ -689,7 +748,7 @@ footer li {
         margin: auto;
     }
     #bloc_page {
-        max-width: 95%;
+        max-width: 94%%;
         margin: auto;
     }
     #corps {
@@ -768,6 +827,9 @@ footer li {
     .activites figure {
         width: 100%;
         height: auto;
+    }
+    .activite-carte-simple {
+        height: 200px;
     }
     footer {
         background-color: #f2f2f2;
