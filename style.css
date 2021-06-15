@@ -42,7 +42,6 @@ header li {
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 35px;
-    position: relative;
 }
 
 .header-top figure {
@@ -679,7 +678,7 @@ footer {
     width: 110%;
     flex-wrap: nowrap;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .footer-titre {
@@ -693,7 +692,7 @@ footer ul {
 }
 
 footer ul:nth-child(3) {
-    margin-right: 200px;
+    margin-right: 300px;
 }
 
 footer li {
@@ -701,154 +700,7 @@ footer li {
 }
 
 
-/* medias queries */
-
-
-/* tablette */
-
-@media screen and (min-width: 870px) and (max-width: 1024px) {
-    body {
-        width: 100%;
-        margin: auto;
-    }
-    #bloc_page {
-        max-width: 95%;
-        margin: auto;
-    }
-    #corps {
-        text-transform: none;
-        height: auto;
-        text-decoration: none;
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column-reverse;
-        width: 100%;
-    }
-    div .logo {
-        margin: 0;
-    }
-    .header-top menu {
-        flex-wrap: wrap-reverse;
-        margin-top: 50px;
-        margin-left: 0px;
-        padding: 0px;
-    }
-    #hebergement {
-        width: 100%;
-        border-radius: 0 0 15px 15px;
-    }
-    .hebergement-plus p {
-        font-size: 20px;
-        font-weight: bold;
-        margin: 0 0 30px 0;
-    }
-    .populaire-grille figure:hover {
-        transform: none;
-    }
-    .hebergement-grille figure:hover {
-        transform: none;
-    }
-    .activite-carte-simple:hover {
-        transform: none;
-    }
-    .activite-carte1:hover {
-        transform: none;
-    }
-    .activite-carte1-1:hover {
-        transform: none;
-    }
-    .activite-carte2:hover {
-        transform: none;
-    }
-    .activite-carte2-2:hover {
-        transform: none;
-    }
-    #populaire {
-        height: auto;
-        width: 100%;
-        padding: 0;
-        border-radius: 15px 15px 0 0;
-    }
-    .populaire-grille {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-direction: row;
-    }
-    .populaire-grille figure {
-        width: 30%;
-    }
-    .populaire-titre {
-        padding-left: 10px;
-    }
-    .filtres {
-        display: flex;
-        align-items: flex-start;
-        margin: 25px 0 20px 0;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    .activites {
-        display: flex;
-        flex-direction: column;
-        height: auto;
-        margin-top: 20px;
-        align-items: center;
-    }
-    .activites figure {
-        width: 100%;
-    }
-    .activites .activite-carte-simple {
-        border: 1px solid red;
-        width: auto;
-        height: 200px;
-        margin-bottom: 20px;
-    }
-    .activite-grande-carte {
-        display: flex;
-        align-items: flex-start;
-        overflow: hidden;
-        flex-direction: column;
-    }
-    .activite-grande-img {
-        flex-shrink: 0;
-        min-width: 100%;
-        min-height: 175px;
-    }
-    .activite-carte-simple {
-        height: 200px;
-    }
-    .activite-carte-double {
-        display: block;
-        width: 100%;
-    }
-    .activite-carte1 {
-        margin-bottom: 20px;
-    }
-    .activite-carte1-1 {
-        margin-bottom: 20px;
-    }
-    .activite-carte2 {
-        margin-bottom: 20px;
-    }
-    .activite-carte2-2 {
-        margin-bottom: 20px;
-    }
-    .activite-petite-carte p {
-        padding: 10px 0 30px 15px;
-        font-size: 120%;
-    }
-    .activite-moyenne-carte p {
-        padding: 10px 0 30px 15px;
-        font-size: 120%;
-    }
-    footer ul:nth-child(3) {
-        margin-right: 150px;
-    }
-}
-
-
-/* mobile */
+/* medias */
 
 @media screen and (max-width: 870px) {
     body {
@@ -869,6 +721,25 @@ footer li {
         width: 100%;
         border-radius: 18px;
         text-transform: none;
+    }
+    .header-top {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 35px;
+        height: auto;
+    }
+    .header-top .menu {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        text-decoration: none;
+        flex-wrap: wrap-reverse;
+    }
+    .header-top .menu li {
+        width: 50%;
     }
     .filtres {
         display: flex;
@@ -981,11 +852,9 @@ footer li {
     }
     .activite-petite-carte p {
         padding: 10px 0 30px 15px;
-        font-size: 120%;
     }
     .activite-moyenne-carte p {
         padding: 10px 0 30px 15px;
-        font-size: 120%;
     }
     footer {
         background-color: #f2f2f2;
