@@ -5,11 +5,16 @@ html {
     margin: 0;
     font-family: "Raleway", sans-serif;
     max-width: 1430px;
+    position: relative;
 }
 
 a:visited {
     text-decoration: none;
     color: black;
+}
+
+a {
+    text-decoration: none;
 }
 
 header .menu {
@@ -100,6 +105,7 @@ h2 {
 .recherche {
     align-items: center;
     display: flex;
+    position: relative;
 }
 
 .form-btn {
@@ -131,6 +137,17 @@ h2 {
     padding: 0 10px 0 10px;
 }
 
+.icon-search {
+    display: none;
+    position: absolute;
+    left: 208px;
+    opacity: 1;
+    color: white;
+    padding: 6px 12px 6px 12px;
+    background-color: #0065fc;
+    border-radius: 0 10px 10px 0;
+}
+
 .btn-search {
     cursor: pointer;
     border: none;
@@ -143,8 +160,6 @@ h2 {
     cursor: pointer;
     border-radius: 0px 10px 10px 0px;
 }
-
-.btn-reset-mobile {}
 
 
 /* header-filtre */
@@ -675,10 +690,12 @@ footer {
     margin: 0px 0px 15px 0px;
     bottom: 0px;
     left: 0px;
-    width: 110%;
+    width: 100%;
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-between;
+    position: fixed;
+    bottom: 0;
 }
 
 .footer-titre {
@@ -701,6 +718,9 @@ footer li {
 
 
 /* medias */
+
+
+/* mobile */
 
 @media screen and (max-width: 870px) {
     body {
@@ -786,7 +806,7 @@ footer li {
         text-transform: none;
     }
     .populaire {
-        width: 100%;
+        width: 95%;
         background-color: #f2f2f2;
         margin: 0;
     }
@@ -863,7 +883,7 @@ footer li {
         margin: 0px 0px 15px 0px;
         bottom: 0px;
         left: 0px;
-        width: 110%;
+        width: 100%;
         flex-wrap: nowrap;
         flex-direction: column;
     }
@@ -894,7 +914,7 @@ footer li {
         margin: 0;
     }
     .header-top {
-        min-width: 970px;
+        margin-right: 0;
         height: auto;
         margin-top: 20px;
         display: flex;
@@ -916,6 +936,24 @@ footer li {
     }
     .header-top .menu li {
         width: 50%;
+    }
+    .icon-search {
+        display: block;
+        position: absolute;
+        left: 208px;
+        opacity: 1;
+        color: white;
+        padding: 6px 12px 6px 12px;
+        background-color: #0065fc;
+        border-radius: 10px 10px 10px 10px;
+    }
+    form .btn-reset {
+        width: 40px;
+        opacity: 0;
+        font-weight: bold;
+        background-color: #0065fc;
+        cursor: pointer;
+        border-radius: 0px 10px 10px 0px;
     }
     #hebergement {
         width: 100%;
@@ -1073,6 +1111,24 @@ footer li {
     .header-top .menu li {
         width: 50%;
     }
+    .icon-search {
+        display: block;
+        position: absolute;
+        left: 208px;
+        opacity: 1;
+        color: white;
+        padding: 6px 12px 6px 12px;
+        background-color: #0065fc;
+        border-radius: 10px 10px 10px 10px;
+    }
+    form .btn-reset {
+        width: 40px;
+        opacity: 0;
+        font-weight: bold;
+        background-color: #0065fc;
+        cursor: pointer;
+        border-radius: 0px 10px 10px 0px;
+    }
     .filtres {
         display: flex;
         align-items: flex-start;
@@ -1195,7 +1251,7 @@ footer li {
         margin: 0px 0px 15px 0px;
         bottom: 0px;
         left: 0px;
-        width: 110%;
+        width: 100%;
         flex-wrap: nowrap;
         flex-direction: column;
     }
