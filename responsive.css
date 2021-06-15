@@ -27,12 +27,26 @@
     .header-top {
         min-width: 970px;
         height: auto;
-    }
-    .header-top menu {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-decoration: none;
         flex-wrap: wrap-reverse;
-        margin-top: 50px;
+    }
+    .header-top .menu {
+        flex-wrap: wrap-reverse;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        text-decoration: none;
+        flex-wrap: wrap-reverse;
         margin-left: 0px;
         padding: 0px;
+    }
+    .header-top .menu li {
+        width: 50%;
     }
     #hebergement {
         width: 100%;
