@@ -69,13 +69,18 @@ header li {
     text-decoration: none;
     padding-top: 20px;
     margin-right: 20px;
-    color: #0065fc;
     font-size: 14px;
 }
 
 .header-top .menu a:hover {
     border-top: 5px solid #0065fc;
     transition: 0.3s;
+    color: #0065fc;
+}
+
+.header-top .menu li:nth-child(3) {
+    font-weight: bolderer;
+    color: #0065fc;
 }
 
 
@@ -155,7 +160,7 @@ h2 {
 }
 
 .btn-reset {
-    font-weight: bold;
+    font-weight: bolder;
     background-color: #0065fc;
     cursor: pointer;
     border-radius: 0px 10px 10px 0px;
@@ -173,12 +178,12 @@ h2 {
 
 .filtres-titre h3 {
     font-size: 18px;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 .filtres-texte {
     font-size: 18px;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 .filtres-titre {
@@ -287,7 +292,7 @@ h2 {
     margin: 30px 0;
     padding-top: 20px;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: bolder;
     margin-bottom: 0;
 }
 
@@ -345,12 +350,12 @@ figcaption p {
 
 .hebergements h3 {
     font-size: 12px;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 .hebergement-plus p {
     font-size: 20px;
-    font-weight: bold;
+    font-weight: bolder;
     margin: 50px 0 0 0;
 }
 
@@ -419,7 +424,7 @@ main figure:nth-child(5) .hebergement-stars i:nth-child(5) {
     color: black;
     margin-top: 18px;
     margin-bottom: 10px;
-    font-weight: bold;
+    font-weight: bolder;
     font-size: 20px;
 }
 
@@ -539,17 +544,17 @@ main figure:nth-child(5) .hebergement-stars i:nth-child(5) {
 
 .activite-titre h2 {
     font-size: 25px;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 .activite-carte-titre {
     padding: 10px 0 35px 20px;
     font-size: 12px;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 .activite-carte-titre h2 {
-    font-weight: bold;
+    font-weight: bolder;
     font-size: 20px;
 }
 
@@ -694,12 +699,10 @@ footer {
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-between;
-    position: fixed;
-    bottom: 0;
 }
 
 .footer-titre {
-    font-weight: bold;
+    font-weight: bolder;
     margin-bottom: 15px;
     font-size: 20px;
 }
@@ -717,177 +720,7 @@ footer li {
 }
 
 
-/* medias */
-
-
-/* mobile */
-
-@media screen and (max-width: 870px) {
-    body {
-        width: 100%;
-        margin: auto;
-    }
-    #bloc_page {
-        max-width: 94%;
-        margin: auto;
-    }
-    #corps {
-        display: flex;
-        flex-direction: column-reverse;
-        height: auto;
-    }
-    #hebergement {
-        background: none;
-        width: 100%;
-        border-radius: 18px;
-        text-transform: none;
-    }
-    .header-top {
-        display: flex;
-        flex-wrap: nowrap;
-        flex-direction: row;
-        justify-content: space-between;
-        margin-bottom: 35px;
-        height: auto;
-    }
-    .header-top .menu {
-        margin-top: 20px;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        text-decoration: none;
-        flex-wrap: wrap-reverse;
-    }
-    .header-top .menu li {
-        width: 50%;
-    }
-    .filtres {
-        display: flex;
-        align-items: flex-start;
-        flex-wrap: wrap;
-        flex-direction: column;
-        margin: 25px 0 20px 0;
-    }
-    .hebergement-grille {
-        text-transform: none;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        width: 100%;
-        margin: 30px 0 50px 0;
-    }
-    .hebergement-grille figure {
-        padding: 5px;
-        width: 100%;
-        margin-bottom: 20px;
-        background-color: white;
-        box-shadow: 2px 4px 15px -1px #9a9a9a;
-        border: 1px white solid;
-        border-radius: 10px;
-        -webkit-transform: scale(1);
-        transform: scale(1);
-        -webkit-transition: 0.3s ease-in-out;
-        transition: 0.3s ease-in-out;
-    }
-    .hebergements {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        width: 100%;
-        margin: auto;
-        margin-top: 0;
-    }
-    #populaire {
-        padding: 0;
-        background-color: #f2f2f2;
-        border-radius: 15px 15px 15px 15px;
-        width: 100%;
-        text-transform: none;
-    }
-    .populaire {
-        width: 95%;
-        background-color: #f2f2f2;
-        margin: 0;
-    }
-    .populaire-titre {
-        padding-left: 10px;
-    }
-    .populaire-marseille a {
-        display: flex;
-        flex-direction: row;
-        height: 100%;
-        justify-content: flex-start;
-    }
-    .populaire-grille figure:hover {
-        transform: none;
-    }
-    .hebergement-grille figure:hover {
-        transform: none;
-    }
-    .activite-carte-simple:hover {
-        transform: none;
-    }
-    .activite-carte1:hover {
-        transform: none;
-    }
-    .activite-carte1-1:hover {
-        transform: none;
-    }
-    .activite-carte2:hover {
-        transform: none;
-    }
-    .activite-carte2-2:hover {
-        transform: none;
-    }
-    .activites {
-        text-decoration: none;
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        height: auto;
-    }
-    .activites figure {
-        border: 1px solid red;
-        width: auto;
-        height: 200px;
-        margin-bottom: 20px;
-    }
-    .activite-carte-simple {
-        height: 250px;
-        overflow: hidden;
-        width: auto;
-    }
-    .activite-grande-img {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
-        height: 60%;
-    }
-    .activite-grande-img img {
-        flex-shrink: 0;
-        min-width: 100%;
-        min-height: 50%;
-    }
-    .activite-petite-carte p {
-        padding: 10px 0 30px 15px;
-    }
-    .activite-moyenne-carte p {
-        padding: 10px 0 30px 15px;
-    }
-    footer {
-        background-color: #f2f2f2;
-        display: flex;
-        align-items: flex-start;
-        margin: 0px 0px 15px 0px;
-        bottom: 0px;
-        left: 0px;
-        width: 100%;
-        flex-wrap: nowrap;
-        flex-direction: column;
-    }
-}
+/* Medias */
 
 
 /* tablette */
@@ -937,6 +770,9 @@ footer li {
     .header-top .menu li {
         width: 50%;
     }
+    .header-top .menu a {
+        font-size: 18px;
+    }
     .icon-search {
         display: block;
         position: absolute;
@@ -950,7 +786,7 @@ footer li {
     form .btn-reset {
         width: 40px;
         opacity: 0;
-        font-weight: bold;
+        font-weight: bolder;
         background-color: #0065fc;
         cursor: pointer;
         border-radius: 0px 10px 10px 0px;
@@ -959,9 +795,16 @@ footer li {
         width: 100%;
         border-radius: 0 0 15px 15px;
     }
+    .hebergement-marseille figcaption h3 {
+        font-size: 14px;
+        font-weight: bolder;
+    }
+    .hebergement-marseille figcaption p {
+        font-size: 12px;
+    }
     .hebergement-plus p {
         font-size: 20px;
-        font-weight: bold;
+        font-weight: bolder;
         margin: 0 0 30px 0;
     }
     .populaire-grille figure:hover {
@@ -991,6 +834,13 @@ footer li {
         padding: 0;
         border-radius: 15px 15px 0 0;
     }
+    .populaire-details h3 {
+        font-size: 14px;
+        font-weight: bolder;
+    }
+    .populaire-details p {
+        font-size: 12px;
+    }
     .populaire-grille {
         display: flex;
         justify-content: space-around;
@@ -1005,7 +855,7 @@ footer li {
     }
     .filtres {
         display: flex;
-        align-items: flex-start;
+        align-items: center;
         margin: 25px 0 20px 0;
         flex-direction: row;
         flex-wrap: wrap;
@@ -1021,8 +871,7 @@ footer li {
         width: 100%;
     }
     .activites .activite-carte-simple {
-        border: 1px solid red;
-        width: auto;
+        width: 100%;
         height: 200px;
         margin-bottom: 20px;
     }
@@ -1033,9 +882,11 @@ footer li {
         flex-direction: column;
     }
     .activite-grande-img {
-        flex-shrink: 0;
-        min-width: 100%;
-        min-height: 175px;
+        height: 150px;
+    }
+    .activite-grande-img img {
+        width: 100%;
+        height: 150px;
     }
     .activite-carte-simple {
         height: 200px;
@@ -1044,25 +895,60 @@ footer li {
         display: block;
         width: 100%;
     }
+    .activite-carte-double2 {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+    .activite-carte-double {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+    .activite-moyenne-img img {
+        height: 150px;
+    }
+    .activite-grande-carte p {
+        font-size: 20px;
+    }
+    .activite-moyenne-carte .activite-carte-titre {
+        padding-top: 0;
+    }
     .activite-carte1 {
         margin-bottom: 20px;
+        width: 100%;
+        height: 200px;
+    }
+    .activite-petite-img img {
+        height: 150px;
+    }
+    .activite-petite-carte .activite-carte-titre {
+        padding-top: 0;
     }
     .activite-carte1-1 {
         margin-bottom: 20px;
+        width: 100%;
+        height: 200px;
     }
     .activite-carte2 {
         margin-bottom: 20px;
+        width: 100%;
+        height: 200px;
     }
     .activite-carte2-2 {
         margin-bottom: 20px;
+        width: 100%;
+        height: 200px;
     }
     .activite-petite-carte p {
         padding: 10px 0 30px 15px;
-        font-size: 120%;
+        font-size: 20px;
     }
     .activite-moyenne-carte p {
         padding: 10px 0 30px 15px;
-        font-size: 120%;
+        font-size: 20px;
     }
     footer ul:nth-child(3) {
         margin-right: 150px;
@@ -1124,7 +1010,7 @@ footer li {
     form .btn-reset {
         width: 40px;
         opacity: 0;
-        font-weight: bold;
+        font-weight: bolder;
         background-color: #0065fc;
         cursor: pointer;
         border-radius: 0px 10px 10px 0px;
@@ -1177,6 +1063,7 @@ footer li {
         width: 100%;
         background-color: #f2f2f2;
         margin: 0;
+        padding: 0;
     }
     .populaire-titre {
         padding-left: 10px;
@@ -1216,15 +1103,29 @@ footer li {
         height: auto;
     }
     .activites figure {
-        border: 1px solid red;
         width: auto;
-        height: 200px;
         margin-bottom: 20px;
     }
     .activite-carte-simple {
-        height: 250px;
+        height: 200px;
         overflow: hidden;
-        width: auto;
+        width: 100%;
+    }
+    .activites .activite-carte-simple {
+        width: 100%;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+    .activite-grande-carte {
+        display: flex;
+        align-items: flex-start;
+        overflow: hidden;
+        flex-direction: column;
+        height: 200px;
+    }
+    .activite-grande-img img {
+        width: 100%;
+        height: 150px;
     }
     .activite-grande-img {
         display: flex;
@@ -1238,11 +1139,60 @@ footer li {
         min-width: 100%;
         min-height: 50%;
     }
+    .activite-carte-double2 {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+    .activite-carte-double {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+    .activite-moyenne-img img {
+        height: 150px;
+    }
+    .activite-grande-carte p {
+        font-size: 20px;
+    }
+    .activite-moyenne-carte .activite-carte-titre {
+        padding-top: 0;
+    }
+    .activite-carte1 {
+        margin-bottom: 20px;
+        width: 100%;
+        height: 200px;
+    }
+    .activite-petite-img img {
+        height: 150px;
+    }
+    .activite-petite-carte .activite-carte-titre {
+        padding-top: 0;
+    }
+    .activite-carte1-1 {
+        margin-bottom: 20px;
+        width: 100%;
+        height: 200px;
+    }
+    .activite-carte2 {
+        margin-bottom: 20px;
+        width: 100%;
+        height: 200px;
+    }
+    .activite-carte2-2 {
+        margin-bottom: 20px;
+        width: 100%;
+        height: 200px;
+    }
     .activite-petite-carte p {
         padding: 10px 0 30px 15px;
+        font-size: 20px;
     }
     .activite-moyenne-carte p {
         padding: 10px 0 30px 15px;
+        font-size: 20px;
     }
     footer {
         background-color: #f2f2f2;
