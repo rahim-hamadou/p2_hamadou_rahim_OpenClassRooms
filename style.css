@@ -84,8 +84,8 @@ header li {
 }
 
 .header-top .menu li:nth-child(3) {
-    font-weight: bolderer;
-    color: #fca400;
+    font-weight: bolder;
+    color: #0065fc;
 }
 
 
@@ -193,7 +193,7 @@ h2 {
 }
 
 .filtres-titre {
-    margin-right: 25px;
+    margin-right: 40px;
 }
 
 .filtres-selection {
@@ -205,6 +205,10 @@ h2 {
     align-items: center;
     justify-content: space-around;
     padding: 0 10px 0 0;
+}
+
+.filtres-selection:hover {
+    cursor: pointer;
 }
 
 .filtres-selection:hover i {
@@ -242,7 +246,7 @@ h2 {
     display: flex;
     align-items: center;
     font-size: 60%;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
 .header-banniere i {
@@ -312,13 +316,12 @@ h2 {
 }
 
 .hebergement-grille figure {
-    padding: 5px;
+    border-radius: 20px;
+    padding: 5px 5px 8px 5px;
     width: 30%;
     margin-bottom: 20px;
     background-color: white;
-    box-shadow: 2px 4px 15px -1px #9a9a9a;
-    border: 1px white solid;
-    border-radius: 10px;
+    box-shadow: 4px 4px 11px -6px #9a9a9a;
     -webkit-transform: scale(1);
     transform: scale(1);
     -webkit-transition: 0.3s ease-in-out;
@@ -326,6 +329,7 @@ h2 {
 }
 
 .hebergement-grille figure:hover {
+    cursor: pointer;
     -webkit-transform: scale(1.08);
     transform: scale(1.08);
     background-color: #deebff;
@@ -400,6 +404,7 @@ main figure:nth-child(5) .hebergement-stars i:nth-child(5) {
 }
 
 .figure-img {
+    border-radius: 20px 20px 0 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -449,6 +454,10 @@ main figure:nth-child(5) .hebergement-stars i:nth-child(5) {
 }
 
 .populaire-grille figure {
+    background-color: #ffffff;
+    box-shadow: 4px 4px 11px -6px #9a9a9a;
+    cursor: pointer;
+    display: flex;
     width: 95%;
     -webkit-transform: scale(1);
     transform: scale(1);
@@ -465,7 +474,6 @@ main figure:nth-child(5) .hebergement-stars i:nth-child(5) {
 .populaire-marseille {
     padding: 5px;
     border-radius: 20px;
-    box-shadow: 1px 1px 10px 5px #e4e4e4;
     height: 140px;
     margin: 18px 0;
 }
@@ -569,7 +577,7 @@ main figure:nth-child(5) .hebergement-stars i:nth-child(5) {
     background-color: white;
     border: 2px #f2f2f2 solid;
     border-radius: 20px;
-    box-shadow: -1px 9px 11px -6px #e4e4e4;
+    box-shadow: 4px 4px 11px -6px #9a9a9a;
     -webkit-transform: scale(1);
     transform: scale(1);
     -webkit-transition: 0.3s ease-in-out;
@@ -617,7 +625,7 @@ main figure:nth-child(5) .hebergement-stars i:nth-child(5) {
     background-color: white;
     border: 2px #f2f2f2 solid;
     border-radius: 20px;
-    box-shadow: -1px 9px 11px -6px #e4e4e4;
+    box-shadow: 4px 4px 11px -6px #9a9a9a;
     height: 240px;
     overflow: hidden;
     -webkit-transform: scale(1);
@@ -630,7 +638,7 @@ main figure:nth-child(5) .hebergement-stars i:nth-child(5) {
     background-color: white;
     border: 2px #f2f2f2 solid;
     border-radius: 20px;
-    box-shadow: -1px 9px 11px -6px #e4e4e4;
+    box-shadow: 4px 4px 11px -6px #9a9a9a;
     height: 240px;
     overflow: hidden;
     -webkit-transform: scale(1);
@@ -654,7 +662,7 @@ main figure:nth-child(5) .hebergement-stars i:nth-child(5) {
     background-color: white;
     border: 2px #f2f2f2 solid;
     border-radius: 20px;
-    box-shadow: -1px 9px 11px -6px #e4e4e4;
+    box-shadow: 4px 4px 11px -6px #9a9a9a;
     overflow: hidden;
 }
 
@@ -776,9 +784,11 @@ footer li {
         margin-top: -60px;
     }
     .header-top .menu li:nth-child(1) {
+        padding-bottom: 10px;
         border-bottom: 2px solid #9a9a9a;
     }
     .header-top .menu li:nth-child(2) {
+        padding-bottom: 10px;
         border-bottom: 2px solid #9a9a9a;
     }
     .header-top .menu li:nth-child(1):hover {
@@ -1023,9 +1033,11 @@ footer li {
         margin-top: -60px;
     }
     .header-top .menu li:nth-child(1) {
+        padding-bottom: 10px;
         border-bottom: 2px solid #9a9a9a;
     }
     .header-top .menu li:nth-child(2) {
+        padding-bottom: 10px;
         border-bottom: 2px solid #9a9a9a;
     }
     .header-top .menu li:nth-child(1):hover {
@@ -1082,7 +1094,8 @@ footer li {
         display: flex;
         align-items: flex-start;
         flex-wrap: wrap;
-        flex-direction: column;
+        flex-direction: row;
+        align-items: center;
         margin: 25px 0 20px 0;
     }
     .hebergement-grille {
@@ -1102,7 +1115,7 @@ footer li {
         background-color: white;
         box-shadow: 2px 4px 15px -1px #9a9a9a;
         border: 1px white solid;
-        border-radius: 10px;
+        border-radius: 20px;
         -webkit-transform: scale(1);
         transform: scale(1);
         -webkit-transition: 0.3s ease-in-out;
@@ -1128,6 +1141,7 @@ footer li {
         background-color: #f2f2f2;
         margin: 0;
         padding: 0;
+        border-radius: 15px;
     }
     .populaire-titre {
         padding-left: 10px;
@@ -1262,7 +1276,7 @@ footer li {
         background-color: #f2f2f2;
         display: flex;
         align-items: flex-start;
-        margin: 0px 0px 15px 0px;
+        margin: 0;
         bottom: 0px;
         left: 0px;
         width: 100%;
