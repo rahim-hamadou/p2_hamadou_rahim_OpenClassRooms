@@ -1,4 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@font-face {
+    font-family: "Raleway";
+    src: url("./Raleway/Raleway-VariableFont_wght.ttf");
+    font-weight: 100 1000;
+}
+
 body,
 html {
     color: black;
@@ -67,7 +72,7 @@ header li {
 
 .header-top .menu a {
     text-decoration: none;
-    padding-top: 20px;
+    padding-top: 22px;
     margin-right: 20px;
     font-size: 14px;
 }
@@ -80,7 +85,7 @@ header li {
 
 .header-top .menu li:nth-child(3) {
     font-weight: bolderer;
-    color: #0065fc;
+    color: #fca400;
 }
 
 
@@ -833,6 +838,9 @@ footer li {
         font-weight: bolder;
         margin: 0 0 30px 0;
     }
+    .hebergement-grille {
+        align-content: center;
+    }
     .populaire-grille figure:hover {
         transform: none;
     }
@@ -978,6 +986,7 @@ footer li {
     }
     footer ul:nth-child(3) {
         margin-right: 150px;
+        margin-bottom: 0%;
     }
 }
 
@@ -1084,6 +1093,7 @@ footer li {
         flex-wrap: wrap;
         width: 100%;
         margin: 30px 0 50px 0;
+        align-content: center;
     }
     .hebergement-grille figure {
         padding: 5px;
@@ -1196,7 +1206,7 @@ footer li {
     .activite-carte-double2 {
         display: flex;
         justify-content: space-between;
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
     }
     .activite-carte-double {
@@ -1258,5 +1268,9 @@ footer li {
         width: 100%;
         flex-wrap: nowrap;
         flex-direction: column;
+    }
+    footer ul:nth-child(3) {
+        margin-right: 150px;
+        margin-bottom: 0%;
     }
 }
