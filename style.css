@@ -160,6 +160,7 @@ h2 {
 }
 
 .btn-reset {
+    color: white;
     font-weight: bolder;
     background-color: #0065fc;
     cursor: pointer;
@@ -354,7 +355,7 @@ figcaption p {
 }
 
 .hebergement-plus p {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bolder;
     margin: 0;
 }
@@ -543,7 +544,7 @@ main figure:nth-child(5) .hebergement-stars i:nth-child(5) {
 }
 
 .activite-titre h2 {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bolder;
 }
 
@@ -689,10 +690,10 @@ main figure:nth-child(5) .hebergement-stars i:nth-child(5) {
 /* footer */
 
 footer {
+    padding: 30px 0;
     background-color: #f2f2f2;
     display: flex;
     align-items: flex-start;
-    margin: 0px 0px 15px 0px;
     bottom: 0px;
     left: 0px;
     width: 100%;
@@ -828,7 +829,7 @@ footer li {
         font-size: 12px;
     }
     .hebergement-plus p {
-        font-size: 20px;
+        font-size: 18px;
         font-weight: bolder;
         margin: 0 0 30px 0;
     }
