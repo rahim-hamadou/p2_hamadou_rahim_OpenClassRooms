@@ -830,6 +830,7 @@ footer li {
     }
     .icon-search {
         display: block;
+        cursor: pointer;
         position: absolute;
         left: 208px;
         opacity: 1;
@@ -1101,6 +1102,7 @@ footer li {
         border-top: none;
     }
     .icon-search {
+        cursor: pointer;
         display: block;
         position: absolute;
         left: 208px;
