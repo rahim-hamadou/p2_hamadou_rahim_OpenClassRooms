@@ -15,7 +15,6 @@ html {
 
 a:visited {
     text-decoration: none;
-    color: none;
 }
 
 a {
@@ -392,24 +391,24 @@ p {
     color: #0065fc;
 }
 
-main figure:nth-child(1) .hebergement-stars i:nth-child(5) {
-    color: #e4e4e4;
+.hebergement-grille a:nth-child(1) .hebergement-stars i:nth-child(5) {
+    color: #9a9a9a;
 }
 
-main figure:nth-child(3) .hebergement-stars i:nth-child(5) {
-    color: #e4e4e4;
+.hebergement-grille a:nth-child(3) .hebergement-stars i:nth-child(5) {
+    color: #9a9a9a;
 }
 
-main figure:nth-child(4) .hebergement-stars i:nth-child(5) {
-    color: #e4e4e4;
+.hebergement-grille a:nth-child(4) .hebergement-stars i:nth-child(4) {
+    color: #9a9a9a;
 }
 
-main figure:nth-child(4) .hebergement-stars i:nth-child(4) {
-    color: #e4e4e4;
+.hebergement-grille a:nth-child(4) .hebergement-stars i:nth-child(5) {
+    color: #9a9a9a;
 }
 
-main figure:nth-child(5) .hebergement-stars i:nth-child(5) {
-    color: #e4e4e4;
+.hebergement-grille a:nth-child(5) .hebergement-stars i:nth-child(5) {
+    color: #9a9a9a;
 }
 
 .figure-img {
@@ -531,11 +530,11 @@ main figure:nth-child(5) .hebergement-stars i:nth-child(5) {
     font-size: 10px;
 }
 
-.populaire-grille figure:nth-child(2) .populaire-stars i:nth-child(5) {
+.populaire-grille a:nth-child(2) .populaire-stars i:nth-child(5) {
     color: #e4e4e4;
 }
 
-.populaire-grille figure:nth-child(3) .populaire-stars i:nth-child(5) {
+.populaire-grille a:nth-child(3) .populaire-stars i:nth-child(5) {
     color: #e4e4e4;
 }
 
