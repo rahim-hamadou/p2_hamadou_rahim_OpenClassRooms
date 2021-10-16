@@ -1,4 +1,4 @@
-p2_rahim_hamadou
+p2_rahim_hamadou RESERVIA
 
 
 
@@ -6,8 +6,8 @@ Projet de reproduction de maquette via OpenClassRooms.
 
 Ce projet a pour objectif :
 
-- Intégrer du contenu conformément à une maquette
-- Implémenter une interface responsive
+Intégrer du contenu conformément à une maquette
+Implémenter une interface responsive
 
 Instruction :
 
