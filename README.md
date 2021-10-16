@@ -12,3 +12,4 @@ Implémenter une interface responsive
 Instruction :
 
 Lancer la page hebergé par github afin de decouvrir la maquette ainsi que sa reproduction
+https://rumgalxdead.github.io/p2_rahim_hamadou/
